@@ -6,7 +6,7 @@ private var verticalLook   : float = 0.0;
 private var trigger    : float = 0.0;
 
 private var cooldown : float = 0.0;
-private var charge : float = 10.0;
+private var charge : float = 20.0;
 
 var controls : String = 'p1';
 var wave : GameObject;
@@ -86,8 +86,8 @@ function FixedUpdate(){
 	if(charge <= 0){
 		cooldown = Time.time + 1.0;
 	}
-	else if(charge > 10){
-		charge = 10;
+	else if(charge > 20.0){
+		charge = 20.0;
 	}
 }
 
@@ -98,10 +98,16 @@ function OnGUI(){
 	var Hpercent : float = height / 100.0;
 
 	if(controls == 'p1'){
-		GUI.Box(Rect(0, 0, Wpercent*10, Hpercent*10), ''+charge);
+		GUI.Box(Rect(0, Hpercent*100-Hpercent*10, Wpercent*25, Hpercent*10), ''+charge);
 	}
 	else if(controls == 'p2'){
-		GUI.Box(Rect(Wpercent*100-Wpercent*10, 0, Wpercent*10, Hpercent*10), ''+charge);
+		GUI.Box(Rect(Wpercent*25, Hpercent*100-Hpercent*10, Wpercent*25, Hpercent*10), ''+charge);
+	}
+	else if(controls == 'p3'){
+		GUI.Box(Rect(Wpercent*50, Hpercent*100-Hpercent*10, Wpercent*25, Hpercent*10), ''+charge);
+	}
+	else if(controls == 'p4'){
+		GUI.Box(Rect(Wpercent*75, Hpercent*100-Hpercent*10, Wpercent*25, Hpercent*10), ''+charge);
 	}
 }
 
@@ -109,4 +115,9 @@ function OnTriggerStay(collider: Collider){
 	if(collider.tag == 'predator'){
 		grabbed = collider;
 	}
+}
+
+function drain(){
+	charge = 0;
+	cooldown = Time.time + 2.0;
 }

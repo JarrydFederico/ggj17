@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2898413c5f2c1f04d850572371cb0478
-timeCreated: 1484983377
+timeCreated: 1485001383
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -10,158 +10,138 @@ ModelImporter:
     100004: Cylinder003
     100006: Cylinder004
     100008: Cylinder005
-    100010: Cylinder006
-    100012: Cylinder007
-    100014: Cylinder008
-    100016: Cylinder009
-    100018: Cylinder010
-    100020: Cylinder011
-    100022: Cylinder012
-    100024: Cylinder013
-    100026: Cylinder014
-    100028: Cylinder015
-    100030: Cylinder016
-    100032: Cylinder017
-    100034: Cylinder018
-    100036: Cylinder019
-    100038: Cylinder020
-    100040: Cylinder021
-    100042: Cylinder022
-    100044: Cylinder023
-    100046: Cylinder024
-    100048: Cylinder025
-    100050: Cylinder026
-    100052: Cylinder027
-    100054: Cylinder028
-    100056: Cylinder029
-    100058: mother_lips
-    100060: //RootNode
-    100062: Plane001
+    100010: Cylinder008
+    100012: Cylinder019
+    100014: Cylinder020
+    100016: Cylinder021
+    100018: Cylinder022
+    100020: Cylinder023
+    100022: Cylinder024
+    100024: Cylinder025
+    100026: Cylinder026
+    100028: Cylinder027
+    100030: Cylinder028
+    100032: Cylinder029
+    100034: Cylinder030
+    100036: mother_lips
+    100038: //RootNode
+    100040: Mut_Eye_R
+    100042: Mut_Eye_R001
+    100044: Mut_Eye_R002
+    100046: Mut_Eye_R003
+    100048: Mut_Eye_R004
+    100050: Mut_Eye_R005
+    100052: Mut_Eye_R006
     400000: Cylinder001
     400002: Cylinder002
     400004: Cylinder003
     400006: Cylinder004
     400008: Cylinder005
-    400010: Cylinder006
-    400012: Cylinder007
-    400014: Cylinder008
-    400016: Cylinder009
-    400018: Cylinder010
-    400020: Cylinder011
-    400022: Cylinder012
-    400024: Cylinder013
-    400026: Cylinder014
-    400028: Cylinder015
-    400030: Cylinder016
-    400032: Cylinder017
-    400034: Cylinder018
-    400036: Cylinder019
-    400038: Cylinder020
-    400040: Cylinder021
-    400042: Cylinder022
-    400044: Cylinder023
-    400046: Cylinder024
-    400048: Cylinder025
-    400050: Cylinder026
-    400052: Cylinder027
-    400054: Cylinder028
-    400056: Cylinder029
-    400058: mother_lips
-    400060: //RootNode
-    400062: Plane001
+    400010: Cylinder008
+    400012: Cylinder019
+    400014: Cylinder020
+    400016: Cylinder021
+    400018: Cylinder022
+    400020: Cylinder023
+    400022: Cylinder024
+    400024: Cylinder025
+    400026: Cylinder026
+    400028: Cylinder027
+    400030: Cylinder028
+    400032: Cylinder029
+    400034: Cylinder030
+    400036: mother_lips
+    400038: //RootNode
+    400040: Mut_Eye_R
+    400042: Mut_Eye_R001
+    400044: Mut_Eye_R002
+    400046: Mut_Eye_R003
+    400048: Mut_Eye_R004
+    400050: Mut_Eye_R005
+    400052: Mut_Eye_R006
     2300000: Cylinder001
     2300002: Cylinder002
     2300004: Cylinder003
     2300006: Cylinder004
     2300008: Cylinder005
-    2300010: Cylinder006
-    2300012: Cylinder007
-    2300014: Cylinder008
-    2300016: Cylinder009
-    2300018: Cylinder010
-    2300020: Cylinder011
-    2300022: Cylinder012
-    2300024: Cylinder013
-    2300026: Cylinder014
-    2300028: Cylinder015
-    2300030: Cylinder016
-    2300032: Cylinder017
-    2300034: Cylinder018
-    2300036: Cylinder019
-    2300038: Cylinder020
-    2300040: Cylinder021
-    2300042: Cylinder022
-    2300044: Cylinder023
-    2300046: Cylinder024
-    2300048: Cylinder025
-    2300050: Cylinder026
-    2300052: Cylinder027
-    2300054: Cylinder028
-    2300056: Cylinder029
-    2300058: mother_lips
-    2300060: Plane001
+    2300010: Cylinder008
+    2300012: Cylinder019
+    2300014: Cylinder020
+    2300016: Cylinder021
+    2300018: Cylinder022
+    2300020: Cylinder023
+    2300022: Cylinder024
+    2300024: Cylinder025
+    2300026: Cylinder026
+    2300028: Cylinder027
+    2300030: Cylinder028
+    2300032: Cylinder029
+    2300034: Cylinder030
+    2300036: mother_lips
+    2300038: //RootNode
+    2300040: Mut_Eye_R
+    2300042: Mut_Eye_R001
+    2300044: Mut_Eye_R002
+    2300046: Mut_Eye_R003
+    2300048: Mut_Eye_R004
+    2300050: Mut_Eye_R005
+    2300052: Mut_Eye_R006
     3300000: Cylinder001
     3300002: Cylinder002
     3300004: Cylinder003
     3300006: Cylinder004
     3300008: Cylinder005
-    3300010: Cylinder006
-    3300012: Cylinder007
-    3300014: Cylinder008
-    3300016: Cylinder009
-    3300018: Cylinder010
-    3300020: Cylinder011
-    3300022: Cylinder012
-    3300024: Cylinder013
-    3300026: Cylinder014
-    3300028: Cylinder015
-    3300030: Cylinder016
-    3300032: Cylinder017
-    3300034: Cylinder018
-    3300036: Cylinder019
-    3300038: Cylinder020
-    3300040: Cylinder021
-    3300042: Cylinder022
-    3300044: Cylinder023
-    3300046: Cylinder024
-    3300048: Cylinder025
-    3300050: Cylinder026
-    3300052: Cylinder027
-    3300054: Cylinder028
-    3300056: Cylinder029
-    3300058: mother_lips
-    3300060: Plane001
-    4300000: Cylinder001
-    4300002: Cylinder002
-    4300004: Cylinder003
-    4300006: Cylinder004
-    4300008: Cylinder005
-    4300010: Cylinder006
-    4300012: Cylinder007
-    4300014: Cylinder008
-    4300016: Cylinder009
-    4300018: Cylinder010
-    4300020: Cylinder011
-    4300022: Cylinder012
-    4300024: Cylinder013
-    4300026: Cylinder014
-    4300028: Cylinder015
-    4300030: Cylinder016
-    4300032: Cylinder017
-    4300034: Cylinder018
-    4300036: Cylinder019
-    4300038: Cylinder020
-    4300040: Cylinder021
-    4300042: Cylinder022
-    4300044: mother_lips
-    4300046: Plane001
-    4300048: Cylinder023
-    4300050: Cylinder024
-    4300052: Cylinder025
-    4300054: Cylinder026
-    4300056: Cylinder027
-    4300058: Cylinder028
-    4300060: Cylinder029
+    3300010: Cylinder008
+    3300012: Cylinder019
+    3300014: Cylinder020
+    3300016: Cylinder021
+    3300018: Cylinder022
+    3300020: Cylinder023
+    3300022: Cylinder024
+    3300024: Cylinder025
+    3300026: Cylinder026
+    3300028: Cylinder027
+    3300030: Cylinder028
+    3300032: Cylinder029
+    3300034: Cylinder030
+    3300036: mother_lips
+    3300038: //RootNode
+    3300040: Mut_Eye_R
+    3300042: Mut_Eye_R001
+    3300044: Mut_Eye_R002
+    3300046: Mut_Eye_R003
+    3300048: Mut_Eye_R004
+    3300050: Mut_Eye_R005
+    3300052: Mut_Eye_R006
+    4300000: mother_Brain
+    4300002: Mut_Eye_R006
+    4300004: Mut_Eye_R005
+    4300006: Mut_Eye_R004
+    4300008: Mut_Eye_R003
+    4300010: Mut_Eye_R002
+    4300012: Mut_Eye_R
+    4300014: Mut_Eye_R001
+    4300016: mother_lips
+    4300018: Cylinder001
+    4300020: Cylinder002
+    4300022: Cylinder003
+    4300024: Cylinder004
+    4300026: Cylinder005
+    4300028: Cylinder008
+    4300030: Cylinder019
+    4300032: Cylinder020
+    4300034: Cylinder021
+    4300036: Cylinder022
+    4300038: Cylinder023
+    4300040: Cylinder024
+    4300042: Cylinder025
+    4300044: Cylinder026
+    4300046: Cylinder027
+    4300048: Cylinder028
+    4300050: Cylinder029
+    4300052: Cylinder030
+    7400000: Idle
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -182,11 +162,93 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 140
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      - path: Cylinder002
+        weight: 1
+      - path: Cylinder003
+        weight: 1
+      - path: Cylinder004
+        weight: 1
+      - path: Cylinder005
+        weight: 1
+      - path: Cylinder008
+        weight: 1
+      - path: Cylinder019
+        weight: 1
+      - path: Cylinder020
+        weight: 1
+      - path: Cylinder021
+        weight: 1
+      - path: Cylinder022
+        weight: 1
+      - path: Cylinder023
+        weight: 1
+      - path: Cylinder024
+        weight: 1
+      - path: Cylinder025
+        weight: 1
+      - path: Cylinder026
+        weight: 1
+      - path: Cylinder027
+        weight: 1
+      - path: Cylinder028
+        weight: 1
+      - path: Cylinder029
+        weight: 1
+      - path: Cylinder030
+        weight: 1
+      - path: mother_lips
+        weight: 1
+      - path: Mut_Eye_R
+        weight: 1
+      - path: Mut_Eye_R001
+        weight: 1
+      - path: Mut_Eye_R002
+        weight: 1
+      - path: Mut_Eye_R003
+        weight: 1
+      - path: Mut_Eye_R004
+        weight: 1
+      - path: Mut_Eye_R005
+        weight: 1
+      - path: Mut_Eye_R006
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 12
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -224,7 +286,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

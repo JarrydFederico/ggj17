@@ -5,6 +5,7 @@ var ballPrefab : GameObject;
 var toxicParticle : GameObject;
 
 private var playing : boolean = true;
+private var speedMod : float = 1.0;
 
 function Start(){
 	transform.localScale.x = 2;
@@ -42,7 +43,11 @@ function FixedUpdate(){
 	}
 
 	if(playa){
-		GetComponent.<Rigidbody>().AddForce((playa.transform.position - transform.position).normalized * 20);
+		GetComponent.<Rigidbody>().AddForce((playa.transform.position - transform.position).normalized * 20 * speedMod);
+	}
+
+	if(speedMod > 1.0){
+		speedMod -= 0.01;
 	}
 
 	if(!playing){
@@ -66,4 +71,8 @@ function OnTriggerStay(collider: Collider){
 
 function stop(){
 	playing = false;
+}
+
+function upgrade(){
+	speedMod = 3.0;
 }

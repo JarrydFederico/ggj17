@@ -4,10 +4,19 @@ var ballPrefab : GameObject;
 var delay : float = 1.0;
 
 private var playing = true;
-private var balls : GameObject[];
+private var space = false;
 
 function Start(){
 
+}
+
+function Update(){
+	if(Input.GetButtonDown('motherspace')){
+		space = true;
+	}
+	else{
+		space = false;
+	}
 }
 
 function FixedUpdate(){
@@ -15,46 +24,20 @@ function FixedUpdate(){
 		return;
 	}
 
-	if(transform.position.y < -1){
-		Destroy(gameObject);
-	}
+	transform.position += Vector3(Input.GetAxis('motherhorizontal'), 0, Input.GetAxis('mothervertical'))*2;
 
-	if(Time.time > cooldown){
-		cooldown = Time.time + delay*Random.Range(0.8, 1.2);
+	if(space){
+		// var colliders = Physics.OverlapSphere(transform.position, 40);
+		var hits = Physics.CapsuleCastAll(transform.position, transform.position-Vector3(0, 50, 0), 60, Vector3(0,-1,0));
 
-		for(var i = 0; i < 1; i++){
-			var ball = Instantiate(ballPrefab,
-				(transform.position+Vector3(Random.Range(-5.0,5.0), 10 , Random.Range(-5.0,5.0))),
-				transform.rotation);
-
-			ball.GetComponent.<Rigidbody>().AddForce(Vector3(Random.Range(-50.0, 50.0),10,Random.Range(-50.0, 50.0)), ForceMode.Impulse);
+		for(var ray in hits){
+			ray.collider.SendMessage('activate', SendMessageOptions.DontRequireReceiver);
 		}
 	}
 }
 
 function OnGUI(){
-	var width = Screen.width;
-	var height = Screen.height;
-	var Wpercent : float = width / 100.0;
-	var Hpercent : float = height / 100.0;
 
-	balls = gameObject.FindGameObjectsWithTag('ball');
-
-	GUI.Box(Rect(0, Hpercent*100-Hpercent*10, Wpercent*10, Hpercent*10), ''+balls.length);
-
-	if(balls.length > 150){
-		//game over
-
-		for(var ball in balls){
-			ball.BroadcastMessage('stop');
-		}
-
-		var barrels = gameObject.FindGameObjectsWithTag('barrel');
-		for(var barrel in barrels){
-			barrel.BroadcastMessage('stop');
-			stop();
-		}
-	}
 }
 
 function stop(){
