@@ -20,6 +20,10 @@ function FixedUpdate(){
 		return;
 	}
 
+	if(transform.position.y < -1){
+		Destroy(gameObject);
+	}
+
 	var particle : GameObject;
 	if(Time.time > countdown){
 		for(var i = 0; i < 10; i++){

@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: 6b315d76758d104469791d2070bea3e4
+timeCreated: 1484988520
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: be_Foot_L
+    100002: be_Foot_L(mirrored)
+    100004: be_HandL
+    100006: be_HandL(mirrored)
+    100008: be_Head
+    100010: be_Pack
+    100012: bn_Arm1_L
+    100014: bn_Arm1_L(mirrored)
+    100016: bn_Arm2_L
+    100018: bn_Arm2_L(mirrored)
+    100020: bn_Arm3_L
+    100022: bn_Arm3_L(mirrored)
+    100024: bn_Foot1_L
+    100026: bn_Foot1_L(mirrored)
+    100028: bn_Foot2_L
+    100030: bn_Foot2_L(mirrored)
+    100032: bn_Hand_L
+    100034: bn_Hand_L(mirrored)
+    100036: bn_Head
+    100038: bn_Leg1_L
+    100040: bn_Leg1_L(mirrored)
+    100042: bn_Leg2_L
+    100044: bn_Leg2_L(mirrored)
+    100046: bn_Leg3_L
+    100048: bn_Leg3_L(mirrored)
+    100050: bn_Neck
+    100052: bn_Pack
+    100054: bn_Spine1
+    100056: bn_Spine2
+    100058: Ct__Hand_L
+    100060: Ct_Foot_L
+    100062: Ct_Foot_R
+    100064: Ct_Hand_R
+    100066: Ct_Head
+    100068: Ct_Master
+    100070: Ct_Neck
+    100072: Ct_Pelvis
+    100074: Ct_Shoulder_L
+    100076: Ct_Shoulder_R
+    100078: Ct_SpineMiddle
+    100080: Ct_Toe_L
+    100082: Ct_Toe_R
+    100084: Dummy001
+    100086: Dummy002
+    100088: IK Chain001
+    100090: IK Chain003
+    100092: IK Chain004
+    100094: IK Chain005
+    100096: player_geo
+    100098: player_geo2
+    100100: //RootNode
+    100102: ray_gun_geo
+    100104: Rectangle001
+    400000: be_Foot_L
+    400002: be_Foot_L(mirrored)
+    400004: be_HandL
+    400006: be_HandL(mirrored)
+    400008: be_Head
+    400010: be_Pack
+    400012: bn_Arm1_L
+    400014: bn_Arm1_L(mirrored)
+    400016: bn_Arm2_L
+    400018: bn_Arm2_L(mirrored)
+    400020: bn_Arm3_L
+    400022: bn_Arm3_L(mirrored)
+    400024: bn_Foot1_L
+    400026: bn_Foot1_L(mirrored)
+    400028: bn_Foot2_L
+    400030: bn_Foot2_L(mirrored)
+    400032: bn_Hand_L
+    400034: bn_Hand_L(mirrored)
+    400036: bn_Head
+    400038: bn_Leg1_L
+    400040: bn_Leg1_L(mirrored)
+    400042: bn_Leg2_L
+    400044: bn_Leg2_L(mirrored)
+    400046: bn_Leg3_L
+    400048: bn_Leg3_L(mirrored)
+    400050: bn_Neck
+    400052: bn_Pack
+    400054: bn_Spine1
+    400056: bn_Spine2
+    400058: Ct__Hand_L
+    400060: Ct_Foot_L
+    400062: Ct_Foot_R
+    400064: Ct_Hand_R
+    400066: Ct_Head
+    400068: Ct_Master
+    400070: Ct_Neck
+    400072: Ct_Pelvis
+    400074: Ct_Shoulder_L
+    400076: Ct_Shoulder_R
+    400078: Ct_SpineMiddle
+    400080: Ct_Toe_L
+    400082: Ct_Toe_R
+    400084: Dummy001
+    400086: Dummy002
+    400088: IK Chain001
+    400090: IK Chain003
+    400092: IK Chain004
+    400094: IK Chain005
+    400096: player_geo
+    400098: player_geo2
+    400100: //RootNode
+    400102: ray_gun_geo
+    400104: Rectangle001
+    2300000: ray_gun_geo
+    3300000: ray_gun_geo
+    4300000: ray_gun_geo
+    4300002: player_geo2
+    7400000: Walk
+    9500000: //RootNode
+    13700000: player_geo2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ct_Master
+        weight: 1
+      - path: Ct_Master/Ct__Hand_L
+        weight: 1
+      - path: Ct_Master/Ct__Hand_L/IK Chain001
+        weight: 1
+      - path: Ct_Master/Ct__Hand_L/ray_gun_geo
+        weight: 1
+      - path: Ct_Master/Ct_Foot_L
+        weight: 1
+      - path: Ct_Master/Ct_Foot_L/IK Chain003
+        weight: 1
+      - path: Ct_Master/Ct_Foot_R
+        weight: 1
+      - path: Ct_Master/Ct_Foot_R/IK Chain004
+        weight: 1
+      - path: Ct_Master/Ct_Hand_R
+        weight: 1
+      - path: Ct_Master/Ct_Hand_R/IK Chain005
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Leg1_L
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Leg1_L/bn_Leg2_L
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Leg1_L/bn_Leg2_L/bn_Leg3_L
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Leg1_L/bn_Leg2_L/bn_Leg3_L/bn_Foot1_L
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Leg1_L/bn_Leg2_L/bn_Leg3_L/bn_Foot1_L/Ct_Toe_L
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Leg1_L/bn_Leg2_L/bn_Leg3_L/bn_Foot1_L/Ct_Toe_L/bn_Foot2_L
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Leg1_L/bn_Leg2_L/bn_Leg3_L/bn_Foot1_L/Ct_Toe_L/bn_Foot2_L/be_Foot_L
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Leg1_L(mirrored)
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Leg1_L(mirrored)/bn_Leg2_L(mirrored)
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Leg1_L(mirrored)/bn_Leg2_L(mirrored)/bn_Leg3_L(mirrored)
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Leg1_L(mirrored)/bn_Leg2_L(mirrored)/bn_Leg3_L(mirrored)/bn_Foot1_L(mirrored)
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Leg1_L(mirrored)/bn_Leg2_L(mirrored)/bn_Leg3_L(mirrored)/bn_Foot1_L(mirrored)/Ct_Toe_R
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Leg1_L(mirrored)/bn_Leg2_L(mirrored)/bn_Leg3_L(mirrored)/bn_Foot1_L(mirrored)/Ct_Toe_R/bn_Foot2_L(mirrored)
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Leg1_L(mirrored)/bn_Leg2_L(mirrored)/bn_Leg3_L(mirrored)/bn_Foot1_L(mirrored)/Ct_Toe_R/bn_Foot2_L(mirrored)/be_Foot_L(mirrored)
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Neck
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Neck/bn_Neck
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Neck/bn_Neck/Ct_Head
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Neck/bn_Neck/Ct_Head/bn_Head
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Neck/bn_Neck/Ct_Head/bn_Head/be_Head
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Shoulder_L
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Shoulder_L/bn_Arm1_L
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Shoulder_L/bn_Arm1_L/bn_Arm2_L
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Shoulder_L/bn_Arm1_L/bn_Arm2_L/bn_Arm3_L
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Shoulder_L/bn_Arm1_L/bn_Arm2_L/bn_Arm3_L/bn_Hand_L
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Shoulder_L/bn_Arm1_L/bn_Arm2_L/bn_Arm3_L/bn_Hand_L/be_HandL
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Shoulder_R
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Shoulder_R/bn_Arm1_L(mirrored)
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Shoulder_R/bn_Arm1_L(mirrored)/bn_Arm2_L(mirrored)
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Shoulder_R/bn_Arm1_L(mirrored)/bn_Arm2_L(mirrored)/bn_Arm3_L(mirrored)
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Shoulder_R/bn_Arm1_L(mirrored)/bn_Arm2_L(mirrored)/bn_Arm3_L(mirrored)/bn_Hand_L(mirrored)
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/bn_Spine1/Ct_SpineMiddle/bn_Spine2/Dummy001/Ct_Shoulder_R/bn_Arm1_L(mirrored)/bn_Arm2_L(mirrored)/bn_Arm3_L(mirrored)/bn_Hand_L(mirrored)/be_HandL(mirrored)
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/Rectangle001
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/Rectangle001/bn_Pack
+        weight: 1
+      - path: Ct_Master/Ct_Pelvis/Dummy002/Rectangle001/bn_Pack/be_Pack
+        weight: 1
+      - path: player_geo
+        weight: 1
+      - path: player_geo2
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

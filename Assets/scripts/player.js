@@ -12,7 +12,26 @@ var controls : String = 'p1';
 var wave : GameObject;
 
 private var speed : float = 100;
+private var dash : boolean = false;
 private var grabbed : Collider;
+
+public var texes : Texture2D[];
+public var mesh : Renderer;
+
+function Start(){
+	if(controls == 'p1'){
+		mesh.material.mainTexture = texes[0];
+	}
+	else if(controls == 'p2'){
+		mesh.material.mainTexture = texes[1];
+	}
+	else if(controls == 'p3'){
+		mesh.material.mainTexture = texes[2];
+	}
+	else if(controls == 'p4'){
+		mesh.material.mainTexture = texes[3];
+	}
+}
 
 function Update(){
 	horizontal = Input.GetAxis(controls+'horizontal')*speed;
@@ -31,6 +50,13 @@ function Update(){
 		// transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(Vector3(horizontalLook, 0.0, verticalLook).normalized), 0.5);
 		transform.rotation = Quaternion.LookRotation(Vector3(horizontalLook, 0.0, verticalLook).normalized);
 	}
+
+	/*if(Input.GetButtonDown(controls+'dash')){
+		dash = true;
+	}
+	else{
+		dash = false;
+	}*/
 }
 
 function FixedUpdate(){
@@ -38,13 +64,15 @@ function FixedUpdate(){
 		GetComponent.<Rigidbody>().AddForce(Vector3(horizontal, 0.0, -vertical));
 	}
 
+	/*if(dash){
+		GetComponent.<Rigidbody>().AddForce(transform.right*1000);
+	}*/
+
 	//shoot wave
 	if(trigger < -0.5 && Time.time > cooldown){
-		// cooldown = Time.time + 3.0;
-
-		wave.transform.localScale.x = 1.5;
-		wave.transform.localScale.y = 1;
-		wave.transform.localScale.z = 1.5;
+		wave.transform.localScale.x = 0.1049238;
+		wave.transform.localScale.y = 0.4196951;
+		wave.transform.localScale.z = 0.4196954;
 		charge -= 0.1;
 	}
 	else{
@@ -56,7 +84,7 @@ function FixedUpdate(){
 	}
 
 	if(charge <= 0){
-		cooldown = Time.time + 3.0;
+		cooldown = Time.time + 1.0;
 	}
 	else if(charge > 10){
 		charge = 10;

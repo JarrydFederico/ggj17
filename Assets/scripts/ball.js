@@ -36,6 +36,10 @@ function FixedUpdate(){
 	var z : float = 0;
 	var count : int = 0;
 
+	if(transform.position.y < -1){
+		Destroy(gameObject);
+	}
+
 	attractions = Physics.OverlapSphere(transform.position, attractRadius, ballLayer);
 	repulsions = Physics.OverlapSphere(transform.position, repulseRadius, ballLayer);
 
@@ -117,22 +121,23 @@ function FixedUpdate(){
 	}
 
 	var particle : GameObject;
+	var neighbours : Collider[];
+	count = 0;
 	if(radiation >= 100){
 
-		var type = Math.floor(Random.value()*2);
+		var type = Mathf.Floor(Random.value*2);
 
 		if(type == 0){
 			//mutate into predator
-			var neighbours = Physics.OverlapSphere(transform.position, 10, ballLayer);
+			neighbours = Physics.OverlapSphere(transform.position, 10, ballLayer);
 			if(neighbours.length > 3){
-				var asdCount = 0;
 				for(var neigh in neighbours){
-					if(asdCount > 3){
+					if(count > 3){
 						continue;
 					}
 					if(neigh.tag != 'predator' && neigh.tag != 'mother'){
 						Destroy(neigh.gameObject);
-						asdCount ++;
+						count ++;
 					}
 				}
 				Instantiate(predatorPrefab, transform.position, transform.rotation);
@@ -143,16 +148,15 @@ function FixedUpdate(){
 			}
 		}
 		else if(type == 1){
-			var neighbours = Physics.OverlapSphere(transform.position, 10, ballLayer);
+			neighbours = Physics.OverlapSphere(transform.position, 10, ballLayer);
 			if(neighbours.length > 3){
-				var asdCount = 0;
 				for(var neigh in neighbours){
-					if(asdCount > 3){
+					if(count > 3){
 						continue;
 					}
 					if(neigh.tag != 'predator' && neigh.tag != 'mother'){
 						Destroy(neigh.gameObject);
-						asdCount ++;
+						count ++;
 					}
 				}
 				Instantiate(motherPrefab, transform.position, transform.rotation);

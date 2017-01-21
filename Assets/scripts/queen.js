@@ -15,6 +15,10 @@ function FixedUpdate(){
 		return;
 	}
 
+	if(transform.position.y < -1){
+		Destroy(gameObject);
+	}
+
 	if(Time.time > cooldown){
 		cooldown = Time.time + delay*Random.Range(0.8, 1.2);
 

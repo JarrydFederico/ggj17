@@ -13,6 +13,10 @@ function Start(){
 }
 
 function FixedUpdate(){
+	if(transform.position.y < -1){
+		Destroy(gameObject);
+	}
+
 	var x : float = 0;
 	var y : float = 0;
 	var z : float = 0;
