@@ -15,20 +15,36 @@ private var speed : float = 100;
 private var dash : boolean = false;
 private var grabbed : Collider;
 
+private var health : float = 100;
+
 public var texes : Texture2D[];
 public var mesh : Renderer;
+public var energyTex : Texture2D;
+public var healthTex : Texture2D;
 
 function Start(){
 	if(controls == 'p1'){
+		if(!statics.player1){
+			Destroy(gameObject);
+		}
 		mesh.material.mainTexture = texes[0];
 	}
 	else if(controls == 'p2'){
+		if(!statics.player2){
+			Destroy(gameObject);
+		}
 		mesh.material.mainTexture = texes[1];
 	}
 	else if(controls == 'p3'){
+		if(!statics.player3){
+			Destroy(gameObject);
+		}
 		mesh.material.mainTexture = texes[2];
 	}
 	else if(controls == 'p4'){
+		if(!statics.player4){
+			Destroy(gameObject);
+		}
 		mesh.material.mainTexture = texes[3];
 	}
 }
@@ -63,6 +79,9 @@ function FixedUpdate(){
 	if(!grabbed){
 		GetComponent.<Rigidbody>().AddForce(Vector3(horizontal, 0.0, -vertical));
 	}
+	else{
+		health -= 0.1;
+	}
 
 	/*if(dash){
 		GetComponent.<Rigidbody>().AddForce(transform.right*1000);
@@ -84,7 +103,8 @@ function FixedUpdate(){
 	}
 
 	if(charge <= 0){
-		cooldown = Time.time + 1.0;
+		cooldown = Time.time + 2.0;
+		charge = 0;
 	}
 	else if(charge > 20.0){
 		charge = 20.0;
@@ -98,16 +118,24 @@ function OnGUI(){
 	var Hpercent : float = height / 100.0;
 
 	if(controls == 'p1'){
-		GUI.Box(Rect(0, Hpercent*100-Hpercent*10, Wpercent*25, Hpercent*10), ''+charge);
+		GUI.DrawTexture(Rect(0, Hpercent*100-Hpercent*25, Wpercent*25, Hpercent*25), texes[4]);
+		GUI.DrawTexture(Rect(Wpercent*10, Hpercent*100-Hpercent*8, Wpercent*10*(charge/20.0), Hpercent*2), energyTex);
+		GUI.DrawTexture(Rect(Wpercent*10, Hpercent*100-Hpercent*15.5, Wpercent*10*(health/100.0), Hpercent*2), healthTex);
 	}
 	else if(controls == 'p2'){
-		GUI.Box(Rect(Wpercent*25, Hpercent*100-Hpercent*10, Wpercent*25, Hpercent*10), ''+charge);
+		GUI.DrawTexture(Rect(Wpercent*25, Hpercent*100-Hpercent*25, Wpercent*25, Hpercent*25), texes[5]);
+		GUI.DrawTexture(Rect(Wpercent*35, Hpercent*100-Hpercent*8, Wpercent*10*(charge/20.0), Hpercent*2), energyTex);
+		GUI.DrawTexture(Rect(Wpercent*35, Hpercent*100-Hpercent*15.5, Wpercent*10*(health/100.0), Hpercent*2), healthTex);
 	}
 	else if(controls == 'p3'){
-		GUI.Box(Rect(Wpercent*50, Hpercent*100-Hpercent*10, Wpercent*25, Hpercent*10), ''+charge);
+		GUI.DrawTexture(Rect(Wpercent*50, Hpercent*100-Hpercent*25, Wpercent*25, Hpercent*25), texes[6]);
+		GUI.DrawTexture(Rect(Wpercent*60, Hpercent*100-Hpercent*8, Wpercent*10*(charge/20.0), Hpercent*2), energyTex);
+		GUI.DrawTexture(Rect(Wpercent*60, Hpercent*100-Hpercent*15.5, Wpercent*10*(health/100.0), Hpercent*2), healthTex);
 	}
 	else if(controls == 'p4'){
-		GUI.Box(Rect(Wpercent*75, Hpercent*100-Hpercent*10, Wpercent*25, Hpercent*10), ''+charge);
+		GUI.DrawTexture(Rect(Wpercent*75, Hpercent*100-Hpercent*25, Wpercent*25, Hpercent*25), texes[7]);
+		GUI.DrawTexture(Rect(Wpercent*85, Hpercent*100-Hpercent*8, Wpercent*10*(charge/20.0), Hpercent*2), energyTex);
+		GUI.DrawTexture(Rect(Wpercent*85, Hpercent*100-Hpercent*15.5, Wpercent*10*(health/100.0), Hpercent*2), healthTex);
 	}
 }
 
@@ -120,4 +148,8 @@ function OnTriggerStay(collider: Collider){
 function drain(){
 	charge = 0;
 	cooldown = Time.time + 2.0;
+}
+
+function takeDamage(){
+	health -= 20;
 }

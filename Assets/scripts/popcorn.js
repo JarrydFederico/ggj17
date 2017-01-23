@@ -8,10 +8,6 @@ var toxicParticle : GameObject;
 private var playing : boolean = true;
 
 function Start(){
-	transform.localScale.x = 3;
-	transform.localScale.y = 1;
-	transform.localScale.z = 3;
-
 	countdown = Time.time + 10;
 }
 
@@ -20,7 +16,7 @@ function FixedUpdate(){
 		return;
 	}
 
-	if(transform.position.y < -1){
+	if(transform.position.y < -100){
 		Destroy(gameObject);
 	}
 

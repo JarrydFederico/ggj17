@@ -16,7 +16,7 @@ function Start(){
 }
 
 function FixedUpdate(){
-	if(transform.position.y < -1){
+	if(transform.position.y < -100){
 		Destroy(gameObject);
 	}
 
@@ -31,7 +31,7 @@ function FixedUpdate(){
 	}
 
 	var particle : GameObject;
-	if(damage >= 150){
+	if(damage >= 100){
 		Destroy(gameObject);
 		particle = Instantiate(toxicParticle, transform.position, transform.rotation);
 		Destroy(particle, 5.0);

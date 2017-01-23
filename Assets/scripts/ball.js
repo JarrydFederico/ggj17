@@ -60,7 +60,7 @@ function FixedUpdate(){
 		//attract
 		if(Vector3.Distance(ball.transform.position, transform.position) < attractRadius){
 			if(Time.time > cooldown && (ball.transform.position - transform.position).magnitude < 25){
-				radiation += 1.0*irradiateModifier;
+				radiation += 1.5*irradiateModifier;
 			}
 
 			x += ball.transform.position.x;
@@ -70,7 +70,7 @@ function FixedUpdate(){
 		}
 		//repulse
 		if(Vector3.Distance(ball.transform.position, transform.position) < repulseRadius){
-			GetComponent.<Rigidbody>().AddForce((transform.position - ball.transform.position)*2.5);
+			GetComponent.<Rigidbody>().AddForce((transform.position - ball.transform.position)*10);
 		}
 	}
 
@@ -184,11 +184,15 @@ function stop(){
 }
 
 function upgrade(){
-	attractModifier = 5.0;
+	attractModifier = 7.5;
 	irradiateModifier = 5.0;
 }
 
 function activate(){
+	if(!playing){
+		Destroy(gameObject);
+	}
+
 	var count : int = 0;
 	if(radiation >= 100){
 		var type = Mathf.Floor(Random.value*mutations.length);
@@ -196,10 +200,11 @@ function activate(){
 		neighbours = Physics.OverlapSphere(transform.position, 10, ballLayer);
 		if(neighbours.length > 5){
 			for(var neigh in neighbours){
+				// neigh.SendMessage('stop');
 				if(count > 5){
 					continue;
 				}
-				if(neigh.tag != 'predator' && neigh.tag != 'mother'){
+				if(neigh.tag != 'predator' && neigh.tag != 'popcorn' && neigh.tag != 'food'){
 					Destroy(neigh.gameObject);
 					count ++;
 				}
@@ -215,6 +220,5 @@ function activate(){
 			Destroy(gameObject);
 			Destroy(particle, 5.0);
 		}
-
 	}
 }

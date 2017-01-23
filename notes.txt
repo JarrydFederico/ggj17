@@ -1,0 +1,37 @@
+mutations:
+	predator
+		- holds people
+	mother spawn
+		- spawns more mini mutants
+	exploding cyst
+		- explodes and stuns/knocks back?
+
+
+Team game with players cooperating to clear the map from radioactive mutants
+
+have to herd them into a hazmat van.
+
+if a thing takes too much radiation, it mutates
+brain mutant will shoot radiation to mutate blobs
+
+players lose if the geigar counter gets too high
+
+
+HUD
+
+health bar for mother brain (a timer?)
+health bar for each player
+energy bar for the guns
+
+Main menu
+	- play
+	- instructs
+	- creds
+	- quit
+
+
+
+Health for players
+Health for queen
+
+players damaged by predators, exploders

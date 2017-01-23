@@ -9,7 +9,6 @@ private var space = false;
 private var health : float = 100.0;
 
 function Start(){
-
 }
 
 function Update(){
@@ -22,6 +21,14 @@ function FixedUpdate(){
 	else{
 		particles.emission.enabled = false;
 	}
+
+	health -= 0.025;
+	if(health > 100){
+		health = 100;
+	}
+	if(health <= 0){
+
+	}
 }
 
 function OnGUI(){
@@ -30,7 +37,7 @@ function OnGUI(){
 	var Wpercent : float = width / 100.0;
 	var Hpercent : float = height / 100.0;
 
-	GUI.Box(Rect(0, 0, Wpercent*100, Hpercent*10), ''+health);
+	// GUI.Box(Rect(0, 0, Wpercent*100, Hpercent*10), ''+Mathf.Ceil(health));
 }
 
 function activate(){

@@ -14,7 +14,7 @@ function Start(){
 }
 
 function FixedUpdate(){
-	if(transform.position.y < -1){
+	if(transform.position.y < -100){
 		Destroy(gameObject);
 	}
 

@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: 7269aa80bdbf5c4489f961731c2d7350
+timeCreated: 1485054051
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Mut_Body001
+    100002: Mut_Body002
+    100004: Mut_Body003
+    100006: Mut_Body004
+    100008: Mut_Body005
+    100010: Mut_Body006
+    100012: Mut_Body007
+    100014: Mut_Body008
+    100016: Mut_Body009
+    100018: Mut_Body010
+    100020: Mut_Eye_R
+    100022: Mut_Eye_R001
+    100024: Mut_Eye_R002
+    100026: Mut_Eye_R003
+    100028: Mut_Eye_R004
+    100030: Mut_Eye_R005
+    100032: //RootNode
+    400000: Mut_Body001
+    400002: Mut_Body002
+    400004: Mut_Body003
+    400006: Mut_Body004
+    400008: Mut_Body005
+    400010: Mut_Body006
+    400012: Mut_Body007
+    400014: Mut_Body008
+    400016: Mut_Body009
+    400018: Mut_Body010
+    400020: Mut_Eye_R
+    400022: Mut_Eye_R001
+    400024: Mut_Eye_R002
+    400026: Mut_Eye_R003
+    400028: Mut_Eye_R004
+    400030: Mut_Eye_R005
+    400032: //RootNode
+    2300000: Mut_Body001
+    2300002: Mut_Body002
+    2300004: Mut_Body003
+    2300006: Mut_Body004
+    2300008: Mut_Body005
+    2300010: Mut_Body006
+    2300012: Mut_Body007
+    2300014: Mut_Body008
+    2300016: Mut_Body009
+    2300018: Mut_Body010
+    2300020: Mut_Eye_R
+    2300022: Mut_Eye_R001
+    2300024: Mut_Eye_R002
+    2300026: Mut_Eye_R003
+    2300028: Mut_Eye_R004
+    2300030: Mut_Eye_R005
+    3300000: Mut_Body001
+    3300002: Mut_Body002
+    3300004: Mut_Body003
+    3300006: Mut_Body004
+    3300008: Mut_Body005
+    3300010: Mut_Body006
+    3300012: Mut_Body007
+    3300014: Mut_Body008
+    3300016: Mut_Body009
+    3300018: Mut_Body010
+    3300020: Mut_Eye_R
+    3300022: Mut_Eye_R001
+    3300024: Mut_Eye_R002
+    3300026: Mut_Eye_R003
+    3300028: Mut_Eye_R004
+    3300030: Mut_Eye_R005
+    4300000: Mut_Body001
+    4300002: Mut_Eye_R001
+    4300004: Mut_Body002
+    4300006: Mut_Eye_R
+    4300008: Mut_Eye_R005
+    4300010: Mut_Body003
+    4300012: Mut_Eye_R003
+    4300014: Mut_Body004
+    4300016: Mut_Body005
+    4300018: Mut_Body006
+    4300020: Mut_Body007
+    4300022: Mut_Body008
+    4300024: Mut_Body009
+    4300026: Mut_Eye_R002
+    4300028: Mut_Body010
+    4300030: Mut_Eye_R004
+    7400000: Entry
+    7400002: Idle
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Entry
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mut_Body001
+        weight: 1
+      - path: Mut_Body001/Mut_Eye_R001
+        weight: 1
+      - path: Mut_Body002
+        weight: 1
+      - path: Mut_Body002/Mut_Eye_R
+        weight: 1
+      - path: Mut_Body002/Mut_Eye_R005
+        weight: 1
+      - path: Mut_Body003
+        weight: 1
+      - path: Mut_Body003/Mut_Eye_R003
+        weight: 1
+      - path: Mut_Body004
+        weight: 1
+      - path: Mut_Body005
+        weight: 1
+      - path: Mut_Body006
+        weight: 1
+      - path: Mut_Body007
+        weight: 1
+      - path: Mut_Body008
+        weight: 1
+      - path: Mut_Body009
+        weight: 1
+      - path: Mut_Body009/Mut_Eye_R002
+        weight: 1
+      - path: Mut_Body010
+        weight: 1
+      - path: Mut_Body010/Mut_Eye_R004
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mut_Body001
+        weight: 1
+      - path: Mut_Body001/Mut_Eye_R001
+        weight: 1
+      - path: Mut_Body002
+        weight: 1
+      - path: Mut_Body002/Mut_Eye_R
+        weight: 1
+      - path: Mut_Body002/Mut_Eye_R005
+        weight: 1
+      - path: Mut_Body003
+        weight: 1
+      - path: Mut_Body003/Mut_Eye_R003
+        weight: 1
+      - path: Mut_Body004
+        weight: 1
+      - path: Mut_Body005
+        weight: 1
+      - path: Mut_Body006
+        weight: 1
+      - path: Mut_Body007
+        weight: 1
+      - path: Mut_Body008
+        weight: 1
+      - path: Mut_Body009
+        weight: 1
+      - path: Mut_Body009/Mut_Eye_R002
+        weight: 1
+      - path: Mut_Body010
+        weight: 1
+      - path: Mut_Body010/Mut_Eye_R004
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

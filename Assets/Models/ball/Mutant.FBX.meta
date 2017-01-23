@@ -19,14 +19,17 @@ ModelImporter:
     2300002: Mut_Eye_L
     2300004: Mut_Eye_R
     2300006: Mut_Hair
+    2300008: //RootNode
     3300000: Mut_Body
     3300002: Mut_Eye_L
     3300004: Mut_Eye_R
     3300006: Mut_Hair
+    3300008: //RootNode
     4300000: Mut_Hair
     4300002: Mut_Body
     4300004: Mut_Eye_R
     4300006: Mut_Eye_L
+    4300008: Mut_Body001
   materials:
     importMaterials: 1
     materialName: 0
